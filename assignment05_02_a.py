@@ -25,13 +25,12 @@ data = {}
 # генеруємо рандомне число від 1 до 100, а потім створюємо послідовність від 0 до сгенерованого числа
 for i in range(random.randint(1, 100)):
     data[i] = f"item_{i}"  # наповнюємо словник відповідно до послідовності рандомної довжини
-    if i >= search_key:
-        print(f"Елемент {search_key}: {data[search_key]}")
-    else:
-        print('Елемент з таким ключем - відсутній')
+if i >= search_key:
+    print(f"Елемент {search_key}: {data[search_key]}")
+else:
+    print('Елемент з таким ключем - відсутній')
 
 
-    # print(data)
-#     print(f'Ghbhhvbdjkfb{i}')
-#
-# print(f"Елемент {search_key}: {data[search_key]}")
+# print(data)
+# print(f'Number{i}')
+
