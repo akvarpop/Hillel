@@ -24,18 +24,20 @@
 
 text_input = str(input('Введіть текст:'))
 letter_input = str(input('Введіть літеру:'))
-if len(letter_input) > 1:
-    print('Літера має довжину більше 1')
-elif len(letter_input) == 0:
-    print('Введіть літеру!')
-elif 0 != text_input.count(letter_input) < 10:
-    print(f'Строка містить літеру {letter_input} до 10 разів.')
-elif 0 != text_input.count(letter_input) < 20:
-    print(f'Строка містить літеру {letter_input} до 20 разів.')
-elif text_input.count(letter_input) >= 20:
-    print(f'Строка містить літеру {letter_input} більше 20 разів.')
-elif text_input.count(letter_input) != letter_input:
-    print(f'такої літери {letter_input} взагалі не знайдено.')
-else:
-    print('УПС, я щось не врахував)')
+count = text_input.count(letter_input)
 
+if len(letter_input) != 1:
+    exit(1)
+# if len(letter_input) > 1:
+#     print('Літера має довжину більше 1')
+# elif len(letter_input) < 0:
+#     print('Введіть літеру!')
+
+if 0 < count <= 10:
+    print(f'Строка містить літеру {letter_input} до 10 разів.')
+elif 10 < count < 20:
+    print(f'Строка містить літеру {letter_input} до 20 разів.')
+elif count > 20:
+    print(f'Строка містить літеру {letter_input} більше 20 разів.')
+else:
+    print(f'такої літери {letter_input} взагалі не знайдено.')
