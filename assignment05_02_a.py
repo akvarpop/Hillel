@@ -30,6 +30,14 @@ if i >= search_key:
 else:
     print('Елемент з таким ключем - відсутній')
 
+# d = {"key1": 10, "key2": 23}
+#
+# if "key1" in d:
+#     print("this will execute")
+#
+# if "nonexistent key" in d:
+#     print("this will not")
+
 
 # print(data)
 # print(f'Number{i}')
