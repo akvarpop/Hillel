@@ -7,3 +7,15 @@
 #
 # підказка:
 #  %= N  # compound assignment
+N = int(input())
+K = int(input())
+
+if K > N:
+    K %= N
+    my_list = list(range(N))
+    del my_list[K-1::K]
+    print(my_list)
+else:
+    my_list = list(range(N))
+    del my_list[K - 1::K]
+    print(my_list)
