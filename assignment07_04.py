@@ -13,3 +13,29 @@
 # 
 # Введіть число для обчислення факторіалу: -5
 # Невірний ввод
+# def factorial(n):
+# 	result = 1
+# 	for i in range(1,n+1):
+# 		result = result*i
+# 	return result
+#
+# n = int(input('Введіть число для обчислення факторіалу: '))
+# result = factorial(n)
+# print(n,'! == ',result,sep="")
+
+def factorial(n):
+	result = 1
+	i=1
+	while i<=n:
+		result*=i
+		i+=1
+	return result
+
+n = int(input('Введіть число для обчислення факторіалу: '))
+if n < 0:
+	print("Невірний ввод")
+else:
+	result = factorial(n)
+	print(n,'! == ',result,sep="")
+
+# if __name__ == "__main__":
