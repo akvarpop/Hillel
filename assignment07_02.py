@@ -11,4 +11,12 @@
 # 0 0 0 4
 #
 # підказка: j+1 if i = j else 0
-#
+
+size = int(input('Введите размер матрицы: '))
+for row in range(size):
+    for col in range(size):
+        if row == col:
+            print(row + 1, end=' ')
+        else:
+            print(0, end=' ')
+    print()
