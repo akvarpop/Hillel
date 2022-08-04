@@ -13,10 +13,16 @@
 # підказка: j+1 if i = j else 0
 
 size = int(input('Введите размер матрицы: '))
-for row in range(size):
-    for col in range(size):
-        if row == col:
-            print(row + 1, end=' ')
-        else:
-            print(0, end=' ')
-    print()
+# for row in range(size):
+#     for col in range(size):
+#         if row == col:
+#             print(row + 1, end=' ')
+#         else:
+#             print(0, end=' ')
+#     print()
+#
+matrix = [[i+1 if i == j else 0 for i in range(size)] for j in range(size)]
+
+print(matrix)
+
+
