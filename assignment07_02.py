@@ -22,7 +22,9 @@ size = int(input('Введите размер матрицы: '))
 #     print()
 #
 matrix = [[i+1 if i == j else 0 for i in range(size)] for j in range(size)]
+for i in matrix:
+    print(i)
 
-print(matrix)
+#print(matrix)
 
 
