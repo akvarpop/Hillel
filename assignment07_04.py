@@ -23,6 +23,8 @@
 # result = factorial(n)
 # print(n,'! == ',result,sep="")
 
+# Вариант_1
+
 def factorial(n):
 	result = 1
 	i=1
@@ -38,4 +40,21 @@ else:
 	result = factorial(n)
 	print(n,'! == ',result,sep="")
 
-# if __name__ == "__main__":
+# Вариант_2
+
+# num = int(input('Ввести число: '))
+#
+#
+# def my_func(n):
+#     factorial = 1
+#     for i in range(2, n + 1):
+#         factorial *= i
+#     return factorial
+#
+# if num >= 0:
+#     print(my_func(num))
+# else:
+#     print('Невірний ввод')
+
+
+
